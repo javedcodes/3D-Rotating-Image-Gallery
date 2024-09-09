@@ -1,6 +1,6 @@
 # 3D Rotating Image Gallery in HTML, CSS, and JavaScript
 
-Creating engaging and artistic features is crucial for attracting visitors' attention in website design. One such feature is the **3D Rotating Image Gallery**, which adds a visually appealing element to your web pages and makes them stand out.
+Creating engaging and artistic features is crucial for attracting visitors' attention in website design. One such feature is the **<a href="https://jvcodes.com/3d-rotating-image-gallery-html-css-javascript/" >3D Rotating Image Gallery</a>**, which adds a visually appealing element to your web pages and makes them stand out.
 
 In this repository, I am providing free source codes that will allow you to implement this interactive feature on your website. This guide is useful for both beginners and professionals looking to enhance their web development skills.
 
