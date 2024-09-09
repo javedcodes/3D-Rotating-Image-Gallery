@@ -32,6 +32,6 @@ To use this gallery in your project visit:
 
 ## Video Preview
 
-This video tutorial explain the how to create the dynamic image gallery.
+This video tutorial explain the how to create 3D Rotating Image Gallery.
 
 [![Watch the video](https://img.youtube.com/vi/oGhA9Zijr34/0.jpg)](https://www.youtube.com/watch?v=oGhA9Zijr34)
