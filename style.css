@@ -1,0 +1,90 @@
+/* The body of the document is styled to center content both vertically and horizontally,
+   with a white background, and overflow hidden to prevent scrollbars. */
+   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  /* The container for the images, styled to have a 3D transform perspective,
+     with a relative position to allow absolutely positioned child elements. */
+  .image-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-top: -200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 2.5s;
+  }
+  
+  /* Each image span is positioned absolutely within the container,
+     with a transform that rotates and translates it in 3D space. */
+  .image-container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  }
+  
+  /* Each image within the span is styled to fill the span,
+     with a transition for transform and shadow effects. */
+  .image-container span img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 1.2);
+  }
+  
+  /* The button container is relatively positioned and centered at 70% width. */
+  .btn-container {
+    position: relative;
+    width: 70%;
+  }
+  
+  /* Common button styling: absolute positioning, background color, text color,
+     no border, padding, border radius, and cursor style. */
+  .btn {
+    position: absolute;
+    bottom: -240px;
+    background-color: #790251;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect to increase brightness. */
+  .btn:hover {
+    filter: brightness(1.2);
+  }
+  
+  /* Specific positioning for the previous button. */
+  #prev {
+    left: 30%;
+  }
+  
+  /* Specific positioning for the next button. */
+  #next {
+    right: 30%;
+  }
+  
+  /* Keyframes for the rotation animation: a full rotation around the Y-axis. */
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
